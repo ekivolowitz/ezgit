@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, Menu} = require('electron')
 const Git = require('nodegit')
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -22,7 +22,43 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+  const template = [
+    {
+      label: 'App',
+      submenu: [
+        { label : 'Preferences' },
+        { label : 'Donate' },
+        { label : 'Quit' }
+      ]
+    },
+    {
+      label: 'File',
+      submenu: [
+        { label : 'New Project' },
+        { label : 'Open Project' }
+      ]
+    },
+    {
+      label: 'Edit',
+      submenu: [
+        { label : 'Not sure what to put here' },
+        { label : 'Or there' }
+      ]
+    },
+    {
+      label: 'Help',
+      submenu: [
+        { label : 'Docs' },
+        { label : 'I\'m beyond help' }
+      ]
+    }
+  ]
+  const menu = Menu.buildFromTemplate(template)
+  Menu.setApplicationMenu(menu)
+
+
 }
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
