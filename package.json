@@ -16,7 +16,7 @@
     "electron": "^4.0.1"
   },
   "dependencies": {
-    "node-docker-api": "^1.1.22",
-    "nodegit": "^0.24.0"
+      "node-docker-api": "^1.1.22",
+      "simple-git": "^1.107.0"
   }
 }
