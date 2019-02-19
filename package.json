@@ -1,16 +1,16 @@
 {
-  "name": "electron-quick-start",
+  "name": "ezgit",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "js/main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/ekivolowitz/ezgit",
   "keywords": [
-    "Git"
+    "ezgit"
   ],
-  "author": "Evan Kivolowitz && Jon Stewart",
+  "author": "Evan Kivolowitz",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^4.0.1"
